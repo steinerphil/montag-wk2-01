@@ -33,4 +33,14 @@ class StudentTest {
                // new Student("alex", 30, 1.0), "Name: Alex, Age: 30, Average: 1.0"
         ));
     }
+
+    @Test
+    void testEquals() {
+        //given
+        Student expected = new Student("anna", 21, 1.3);
+        //when
+        Student actual = new Student("anna", 21, 3.3);  // Average differs but test is ok
+        //then
+        assertEquals(expected, actual);
+    }
 }
