@@ -6,9 +6,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Student first = new Student();
+        Student first = new Student("peter", 22, 3.1);
+        Student second = new Student("peter", 22, 4.1);
 
-        first.setName("peter");
-        System.out.println(first.getName());
+        System.out.println(first);
+        System.out.println(first.equals(second));
+
     }
 }
